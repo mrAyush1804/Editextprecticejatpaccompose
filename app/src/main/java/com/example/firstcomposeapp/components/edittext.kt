@@ -49,12 +49,13 @@ fun dynamicedittext(
         modifier = Modifier
             .border(
                 BorderStroke(
-                    width = 4.dp, brush = Brush.horizontalGradient(listOf(Color.Black, Color.Blue))
+                    width = 4.dp,
+                    brush = Brush.horizontalGradient(listOf(Color.Black, Color.Blue))
                 ),
                 shape = CutCornerShape(10)
             )
             .padding(horizontal = 6.dp), keyboardOptions = KeyboardOptions(
-            keyboardType = KeyboardType.Text, // Set the desired keyboard type (e.g., Text, Email, Phone, etc.)
+            keyboardType = inputType, // Set the desired keyboard type (e.g., Text, Email, Phone, etc.)
             imeAction = ImeAction.Done // Optional: Defines the action button on the keyboard (e.g., Done, Next)
         ),
         colors = TextFieldDefaults.colors().copy(
