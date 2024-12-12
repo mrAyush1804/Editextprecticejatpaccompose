@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.firstcomposeapp.components.showedittext
 import com.example.firstcomposeapp.ui.theme.FirstcomposeappTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-           postofficeapp()
+           preview()
         }
     }
+}
+
+@Preview
+@Composable
+fun preview()
+{
+    showedittext()
 }
